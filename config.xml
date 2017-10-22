@@ -30,6 +30,7 @@
         <splash density="port-xxhdpi" src="res/screens/android/splash-port-xxhdpi.png" />
         <splash density="port-xxxhdpi" src="res/screens/android/splash-port-xxxhdpi.png" />
     </platform>
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
