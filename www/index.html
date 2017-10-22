@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo List app</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body data-ng-app="myModule" data-ng-controller="myFirstController">
+	<div class="container">
+			<h1>Todo list</h1> 
+		<input id="new-todo" autofocus type="text" placeholder="Needs to be done?" data-ng-model="todos.name" />
+
+		<button class="button" data-ng-click="makeNewTodoItem()">add</button> 
+
+		<br />
+	
+		<ul id="toto-list">
+			<li data-ng-repeat="currentItem in todoItems | filter:searchName ">{{currentItem.name}}: {{currentItem.description}} <button ng-click="deleteTodoItem($index)">Delete</button></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>
