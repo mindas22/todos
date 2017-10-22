@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="net.mintis.todos" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="net.mintis.todos" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>TodoList</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Angularjs + phonegap build service. A todo list app.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
+    <author email="mindaugas.lickus@webelevate.ie" href="https://mintis.net/todos">
         Apache Cordova Team
     </author>
     <content src="index.html" />
