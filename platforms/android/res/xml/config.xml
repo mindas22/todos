@@ -38,5 +38,4 @@
     <splash density="port-xxhdpi" src="res/screens/android/splash-port-xxhdpi.png" />
     <splash density="port-xxxhdpi" src="res/screens/android/splash-port-xxxhdpi.png" />
     <preference name="loglevel" value="DEBUG" />
-    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 </widget>

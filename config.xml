@@ -4,8 +4,8 @@
     <description>
         Angularjs + phonegap build service. A todo list app.
     </description>
-    <author email="mindaugas.lickus@webelevate.ie" href="https://mintis.net/todos">
-        Apache Cordova Team
+    <author email="mindaugas.lickus@webelevate.ie" href="https://todos.mintis.net">
+        Mindaugas Lickus
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -31,7 +31,6 @@
         <splash density="port-xxhdpi" src="res/screens/android/splash-port-xxhdpi.png" />
         <splash density="port-xxxhdpi" src="res/screens/android/splash-port-xxxhdpi.png" />
     </platform>
-    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
