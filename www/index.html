@@ -3,6 +3,7 @@
 <head>
 	<title>Todo List app</title>
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	 <meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- The ngCloak directive is used to prevent the AngularJS html template from being briefly displayed by the browser in its raw (uncompiled) form while application is loading. -->
 	<style>[ng-cloak] { display: none; }</style>
@@ -11,17 +12,17 @@
 <body data-ng-app="myModule" data-ng-controller="mainController">
 	<div class="container">
 			<h1>Todo list</h1> 
-		<input id="new-todo" autofocus type="text" placeholder="needs to be done?" data-ng-model="todos.name" />
+		<input id="new-todo" ng-keyup="inputEnter()" autofocus type="text" placeholder="needs to be done?" data-ng-model="todos.name" />
 
 		<button class="button" data-ng-click="makeNewTodoItem()">add</button> 
 
 		<br />
 	
 		<ul id="toto-list" ng-cloak>
-			<li data-ng-repeat="currentItem in todoItems">{{currentItem.name}} {{currentItem.description}} <button class="deleteBtn" ng-click="deleteTodoItem($index)">X</button></li>
+			<li data-ng-repeat="currentItem in todoItems track by $index">{{currentItem.name}} <button class="deleteBtn" ng-click="deleteTodoItem($index)">X</button></li>
 		</ul>
 	</div>
-
+	<!-- PhoneGap Build will inject phonegap.js, cordova.js (identical sources), ref: http://docs.phonegap.com/phonegap-build/start/ -->
 	<script type="text/javascript" src="cordova.js"></script>
 	<script src="js/angular.min.js"></script>
 	<script src="js/app.js"></script>
