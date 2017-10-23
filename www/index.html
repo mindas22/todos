@@ -16,7 +16,7 @@
 
 		<br />
 	
-		<ul id="toto-list">
+		<ul id="toto-list" ng-cloak>
 			<li data-ng-repeat="currentItem in todoItems | filter:searchName ">{{currentItem.name}}: {{currentItem.description}} <button ng-click="deleteTodoItem($index)">Delete</button></li>
 		</ul>
 	</div>
