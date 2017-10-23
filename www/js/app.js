@@ -12,13 +12,6 @@ myApp.controller('mainController', function($scope) {
 
 	$scope.todoItems = todoItems;
 	
-	//making option to submit input with keypress enter or return on mobile phone
-	$scope.inputEnter = function() {
-		if(event.which == 13 && $scope.todos.name != '') {
-			$scope.makeNewTodoItem();
-		}
-	};
-
 	//todos factory 
 	$scope.makeNewTodoItem = function () {
 		//checking if input has some value
@@ -41,13 +34,13 @@ myApp.controller('mainController', function($scope) {
 
 	var todoItemsData = localStorage['todosList'];
 		if (todoItemsData) {
-			$scope.todoItems = JSON.parse(todoItemsData)
+			$scope.todoItems = JSON.parse(todoItemsData);
 		}
 
 
 	$scope.deleteTodoItem = function ($index) {
 
 		$scope.todoItems.splice($index, 1);
-
+		localStorage['todosList'] = JSON.stringify($scope.todoItems);
 	};
 });
