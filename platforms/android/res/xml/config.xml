@@ -12,8 +12,8 @@
     <description>
         Angularjs + phonegap build service. A todo list app.
     </description>
-    <author email="mindaugas.lickus@webelevate.ie" href="https://mintis.net/todos">
-        Apache Cordova Team
+    <author email="mindaugas.lickus@webelevate.ie" href="https://todos.mintis.net">
+        Mindaugas Lickus
     </author>
     <content src="index.html" />
     <access origin="*" />

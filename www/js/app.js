@@ -24,6 +24,7 @@ myApp.controller('myFirstController', function($scope) {
 		);
 		//clearing input after pushing to array
 		$scope.todos.name = '';
+		$scope.todos.description = '';
 	}
 	};
 
