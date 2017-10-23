@@ -39,9 +39,9 @@ button:active {
 	top:1px;
 }
 button.deleteBtn {
-    font-size:10px;
+    font-size:14px;
     color: red;
-    padding:5px 5px;
+    padding:5px 8px;
     background-color: transparent;
 }
 
