@@ -14,6 +14,7 @@ myApp.controller('myFirstController', function($scope) {
 
 	$scope.makeNewTodoItem = function () {
 		
+		if ($scope.todos.name != '') {
 		
 		$scope.todoItems.push(
 			{
@@ -23,7 +24,7 @@ myApp.controller('myFirstController', function($scope) {
 		);
 		//clearing input after pushing to array
 		$scope.todos.name = '';
-	
+	}
 	};
 
 	$scope.deleteTodoItem = function ($index) {
