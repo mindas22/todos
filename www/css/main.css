@@ -46,8 +46,6 @@ button.deleteBtn {
 }
 
 ul > li {
-    white-space: pre-line;
-    word-break: break-all;
     padding: 15px 60px 15px 15px;
     margin-left: 25px;
     display: block;
