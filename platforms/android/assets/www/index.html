@@ -4,6 +4,8 @@
 	<title>Todo List app</title>
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- The ngCloak directive is used to prevent the AngularJS html template from being briefly displayed by the browser in its raw (uncompiled) form while application is loading. -->
+	<style>[ng-cloak] { display: none; }</style>
 
 </head>
 <body data-ng-app="myModule" data-ng-controller="myFirstController">
@@ -15,13 +17,13 @@
 
 		<br />
 	
-		<ul id="toto-list">
-			<li data-ng-repeat="currentItem in todoItems | filter:searchName ">{{currentItem.name}}: {{currentItem.description}} <button ng-click="deleteTodoItem($index)">Delete</button></li>
+		<ul id="toto-list" ng-cloak>
+			<li data-ng-repeat="currentItem in todoItems | filter:searchName ">{{currentItem.name}}: {{currentItem.description}} <button ng-click="deleteTodoItem($index)">X</button></li>
 		</ul>
 	</div>
 
-	<!-- <script type="text/javascript" src="cordova.js"></script> -->
-	<script src="js/angular.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script src="js/angular.js"></script>
 	<script src="js/app.js"></script>
 
 </body>

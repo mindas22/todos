@@ -13,7 +13,7 @@ h1 {
 }
 
 #new-todo {
-	padding: 16px 20px 16px 50px;
+	padding: 16px 16px 16px 30px;
 	line-height: 1.4em;
 	font-size: 24px;
 	border: none;
@@ -21,24 +21,31 @@ h1 {
     box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
 }
 
-.button {
+
+button {
 	background-color:#44c767;
 	display:inline-block;
 	color:#ffffff;
-	font-size:23px;
-	padding:17px 34px;
+	font-size:20px;
+	padding:20px 17px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
 }
-.button:hover {
+button:hover {
 	background-color:#5cbf2a;
 }
-.button:active {
+button:active {
 	position:relative;
 	top:1px;
 }
+button.deleteBtn {
+    font-size:10px;
+    color: red;
+    padding:5px 5px;
+    background-color: transparent;
+}
 
-#todo-list li label {
+ul > li {
     white-space: pre-line;
     word-break: break-all;
     padding: 15px 60px 15px 15px;
@@ -48,7 +55,7 @@ h1 {
     transition: color 0.4s;
 }
 
-.todo-list ul > li {
+ul > li {
     position: relative;
     font-size: 24px;
     border-bottom: 1px solid #ededed;
