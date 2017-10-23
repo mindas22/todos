@@ -31,13 +31,13 @@ myApp.controller('mainController', function($scope) {
 		}
 	};
 
-
+	//adding to localstorage
 	var todoItemsData = localStorage['todosList'];
 		if (todoItemsData) {
 			$scope.todoItems = JSON.parse(todoItemsData);
 		}
 
-
+		//removing todoItems from array and updating localStorage
 	$scope.deleteTodoItem = function ($index) {
 
 		$scope.todoItems.splice($index, 1);

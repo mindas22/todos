@@ -11,11 +11,13 @@
 </head>
 <body data-ng-app="myModule" data-ng-controller="mainController">
 	<div class="container">
-			<h1>Todo list</h1> 
-		<input id="new-todo" ng-keyup="inputEnter()" autofocus type="text" placeholder="needs to be done?" data-ng-model="todos.name" />
+		<h1>Todo list</h1> 
 
-		<button class="button" data-ng-click="makeNewTodoItem()">add</button> 
-
+		<form name="todosForm">
+			<input id="new-todo" ng-keyup="inputEnter()" autofocus type="text" placeholder="needs to be done?" data-ng-model="todos.name" required />
+			<!-- ng-disabled="todosForm.$invalid" helps to validate the required input -->
+			<button ng-disabled="todosForm.$invalid" class="button" data-ng-click="makeNewTodoItem()">add</button> 
+		</form>
 		<br />
 	
 		<ul id="toto-list" ng-cloak>
