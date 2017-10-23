@@ -40,7 +40,7 @@ myApp.controller('mainController', function($scope) {
 		}
 	};
 
-
+	
 	var todoItemsData = localStorage['todosList'];
 		if (todoItemsData !== undefined) {
 			$scope.todoItems = JSON.parse(todoItemsData)
